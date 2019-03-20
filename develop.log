@@ -1,0 +1,37 @@
+2018.01.14  Jun
+------------------------
+Changes in ORB-cARV slam
+1. system.h, change mMap from private to public
+2. 
+
+2018/01/15  Jun
+-------------------------------
+1 timestamp from jetson image and robot pose are different, why?
+  --1 robot time stamp is determined by the master ros machine, so no worry.
+  --2 image time stamp is determined by local machine, which is jetson x2.
+  --3 we should change this image time stamp to local one when we receive it in orbslam. or more better way is
+      precise adjust jetson x2's local time.
+2. show local time, sudo date
+3. change timezone, sudo dpkg-reconfigure tzdata, select america, admonton.
+4. set local time, sudo date nnddhhmmyyyy.ss, nn-month, i.e., 01,
+   sudo date 011510492018.48
+5. after adjusting their timezone, finally, they are in the same timezone, and returned timestamp are the same, 
+   image returned from jetson x2 is a little bit delayed about 0.8s than robot pose. but shouldn't matter too much.
+6. it means, all the timestamp returned are the local machine's time.
+
+2018/01/16 Jun
+-------------------
+1 solving least square, under constraints (such as rotation matrix, R), using SDP, or cvx a matlab package.
+2 actually, we can firstly using normal OLS, and then using SVD to approximate the SO(3) rotation matrix.
+
+2015/01/21
+-----------------
+1. OpenCV and PCL can not work well in ROS, even tried removing all using namespace cv and pcl, camilo's cal_surface_normal can not work either when using them. He wrote using namespace cv, actually, he is not using any code in cv namespace.
+2. tried the Kitti guy's (Andrea) libicp, but results are wrong.
+3. seems only the python codes are correct, now my direction is using python, c++ invokes python.
+4, tried so many methods, now I'm gonna rewrite python code to c++
+
+perfect test pose: rosservice call /zeus/wam/joint_move '[-0.01997827359460585, -1.1501054894800644, -0.003147235418634868, 1.1128178404561502,0,0,0]'
+
+rosservice call /zeus/wam/joint_move '[0.02534720635220559, -0.9545161514990351, -0.03826855820629933, 2.024343313079751, -0.005218697525796512, -0.03732159442690839, -0.04890655425542969]'
+

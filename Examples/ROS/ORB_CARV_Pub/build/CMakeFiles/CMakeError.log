@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/chris/catkin_ws/src/long_range_teleoperation/robot-side/2_ORB_SLAM_Pub/Examples/ROS/ORB_CARV_Pub/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_588df/fast"
+/usr/bin/make -f CMakeFiles/cmTC_588df.dir/build.make CMakeFiles/cmTC_588df.dir/build
+make[1]: Entering directory '/home/chris/catkin_ws/src/long_range_teleoperation/robot-side/2_ORB_SLAM_Pub/Examples/ROS/ORB_CARV_Pub/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_588df.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_588df.dir/CheckSymbolExists.c.o   -c /home/chris/catkin_ws/src/long_range_teleoperation/robot-side/2_ORB_SLAM_Pub/Examples/ROS/ORB_CARV_Pub/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_588df
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_588df.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_588df.dir/CheckSymbolExists.c.o  -o cmTC_588df -rdynamic 
+CMakeFiles/cmTC_588df.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_588df.dir/build.make:97: recipe for target 'cmTC_588df' failed
+make[1]: *** [cmTC_588df] Error 1
+make[1]: Leaving directory '/home/chris/catkin_ws/src/long_range_teleoperation/robot-side/2_ORB_SLAM_Pub/Examples/ROS/ORB_CARV_Pub/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_588df/fast' failed
+make: *** [cmTC_588df/fast] Error 2
+
+File /home/chris/catkin_ws/src/long_range_teleoperation/robot-side/2_ORB_SLAM_Pub/Examples/ROS/ORB_CARV_Pub/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/chris/catkin_ws/src/long_range_teleoperation/robot-side/2_ORB_SLAM_Pub/Examples/ROS/ORB_CARV_Pub/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ee151/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ee151.dir/build.make CMakeFiles/cmTC_ee151.dir/build
+make[1]: Entering directory '/home/chris/catkin_ws/src/long_range_teleoperation/robot-side/2_ORB_SLAM_Pub/Examples/ROS/ORB_CARV_Pub/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ee151.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ee151.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ee151
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee151.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_ee151.dir/CheckFunctionExists.c.o  -o cmTC_ee151 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ee151.dir/build.make:97: recipe for target 'cmTC_ee151' failed
+make[1]: *** [cmTC_ee151] Error 1
+make[1]: Leaving directory '/home/chris/catkin_ws/src/long_range_teleoperation/robot-side/2_ORB_SLAM_Pub/Examples/ROS/ORB_CARV_Pub/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ee151/fast' failed
+make: *** [cmTC_ee151/fast] Error 2
+
+

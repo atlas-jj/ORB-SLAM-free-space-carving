@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/chris/catkin_ws/src/long_range_teleoperation/robot-side/2_ORB_SLAM_Pub/Examples/ROS/ORB_CARV_Pub/build/devel/setup.sh
