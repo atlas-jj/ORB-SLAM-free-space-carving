@@ -49,7 +49,7 @@ export ROS_HOSTNAME=your-ip
 - src/Modeler : implementation of CARV algorithm
 - src : add map points to CARV model, and display in Pangolin. Modified based on original ORB-SLAM2
 
-***[More details can be found in src/README.md][]***
+***[More details can be found in src/README.md][4]***
 
 [1]: https://webdocs.cs.ualberta.ca/~dana/Papers/103dpvt_Lovi.pdf
 [2]: TBD
