@@ -8,8 +8,8 @@ Implementation and annotation of Free Space Carving algorithm (CARV) using ORB-S
 
 ![](https://github.com/atlas-jj/ORB-SLAM-free-space-carving/blob/master/expOverview.png?raw=true)
 
-- If you find the codes are useful, please cite my [paper][2]. Citations are REALLY valuable, for a PhD student in a not so that famous research group.
-- However, if you prefer not to cite due to various reasons (e.g., no enough space in your paper), I totally agree.
+- If you find the codes are useful, please cite [CARV][1], [Shida's paper][3] and [my paper][2]. Citations are REALLY valuable, for a PhD student.
+- However, if you prefer not to cite due to various reasons (e.g., not enough space in your paper), I totally agree.
 
 # What is it?
 - It's basically a real-time method for 3D surface reconstruction.
@@ -45,11 +45,13 @@ export ROS_HOSTNAME=your-ip
 3. run your camera node, e.g., usb-cam launch file. For compressed image: rosrun image_transport republish compressed in:=/touch/usb_cam/image_raw raw out:=/chris/image
 4. rosrun ORB_CARV_Pub Mono Vocabulary/ORBvoc.txt chris_logic_HD720.yaml /camera/image_raw:=/usb_cam/image_raw
 
-## Code Structure
+## Codes Explained
 - src/Modeler : implementation of CARV algorithm
 - src : add map points to CARV model, and display in Pangolin. Modified based on original ORB-SLAM2
 
-more details can be found in src/README.md
+***[More details can be found in src/README.md][]***
 
 [1]: https://webdocs.cs.ualberta.ca/~dana/Papers/103dpvt_Lovi.pdf
 [2]: TBD
+[3]: https://arxiv.org/abs/1708.03275
+[4]: https://github.com/atlas-jj/ORB-SLAM-free-space-carving/tree/master/src
