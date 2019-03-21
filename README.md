@@ -1,10 +1,9 @@
 # ORB-SLAM-free-space-carving
 
 Implementation and annotation of Free Space Carving algorithm (CARV) using ORB-SLAM map points and camera poses.
-#### more details in original Orb-slam project: https://github.com/raulmur/ORB_SLAM2
 
-- Maintenance will be available when the author finds a full-time job. Sorry he has to raise two kids with very limited funding.
-- More details on free space carving algorithm CARV are in [Incremental Free-Space Carving for Real-Time 3D Reconstruction][1]
+- Maintenance will only be available when the author finds a full-time job. Sorry he has to raise two kids with very limited funding.
+- More details on free space carving algorithm CARV are in [Incremental Free-Space Carving for Real-Time 3D Reconstruction][1]. Details on ORB-SLAM are in https://github.com/raulmur/ORB_SLAM2.
 - Codes are used in a robotic teleoperation task (from Singapore to Edmonton). Details about this experiment can be found in [Long  range  teleoperation  for  fine  manipulation  tasksunder  time-delay  network  conditions][2].
 
 ![](https://github.com/atlas-jj/ORB-SLAM-free-space-carving/blob/master/expOverview.png?raw=true)
