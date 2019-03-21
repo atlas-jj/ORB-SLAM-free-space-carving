@@ -47,8 +47,8 @@ export ROS_HOSTNAME=192.168.1.17
 4. rosrun ORB_CARV_Pub Mono Vocabulary/ORBvoc.txt chris_logic_HD720.yaml /camera/image_raw:=/usb_cam/image_raw
 
 ## Code Structure
--- src/Modeler : implementation of CARV algorithm
--- src : add map points to CARV model, and display in Pangolin. Modified based on original ORB-SLAM2
+- src/Modeler : implementation of CARV algorithm
+- src : add map points to CARV model, and display in Pangolin. Modified based on original ORB-SLAM2
 
 more details can be found in src/README.md
 
