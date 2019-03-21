@@ -40,8 +40,8 @@ cd your-folder
 
 ## run
 1. set env if you networking with other computers:
-export ROS_MASTER_URI=http://192.168.1.17:11311
-export ROS_HOSTNAME=192.168.1.17
+export ROS_MASTER_URI=http://your-ip:11311
+export ROS_HOSTNAME=your-ip
 2. roscore
 3. run your camera node, e.g., usb-cam launch file. For compressed image: rosrun image_transport republish compressed in:=/touch/usb_cam/image_raw raw out:=/chris/image
 4. rosrun ORB_CARV_Pub Mono Vocabulary/ORBvoc.txt chris_logic_HD720.yaml /camera/image_raw:=/usb_cam/image_raw
