@@ -10,6 +10,7 @@ Implementation and annotation of Free Space Carving algorithm (CARV) using ORB-S
 
 - If you find the codes are useful, please cite [CARV][1], [Shida's paper][3] and [my paper][2]. Citations are REALLY valuable, for a PhD student.
 - However, if you prefer not to cite due to various reasons (e.g., not enough space in your paper), I totally agree.
+- CARV using line features: [semi-dense CARV][5]
 
 # What is it?
 - It's basically a real-time method for 3D surface reconstruction.
@@ -55,3 +56,4 @@ export ROS_HOSTNAME=your-ip
 [2]: TBD
 [3]: https://arxiv.org/abs/1708.03275
 [4]: https://github.com/atlas-jj/ORB-SLAM-free-space-carving/tree/master/src
+[5]: https://github.com/shidahe/semidense-lines
