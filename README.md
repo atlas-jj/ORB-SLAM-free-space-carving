@@ -53,7 +53,7 @@ export ROS_HOSTNAME=your-ip
 ***[More details can be found in src/README.md][4]***
 
 [1]: https://webdocs.cs.ualberta.ca/~dana/Papers/103dpvt_Lovi.pdf
-[2]: TBD
+[2]: https://arxiv.org/abs/1903.09189
 [3]: https://arxiv.org/abs/1708.03275
 [4]: https://github.com/atlas-jj/ORB-SLAM-free-space-carving/tree/master/src
 [5]: https://github.com/shidahe/semidense-lines
